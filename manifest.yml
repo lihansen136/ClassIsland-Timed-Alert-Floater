@@ -1,5 +1,0 @@
-id: classisland.customcountdown
-name: 自定义倒计时插件
-description: 自定义倒计时功能的插件
-entranceAssembly: "ClassIsland.CustomCountdownPlugin.dll"
-apiVersion: 1.6.0.3
