@@ -7,7 +7,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Threading; 
 using System.Media;
 using Microsoft.Extensions.Logging;
-using ClassIsland.Shared;
 
 namespace ClassIsland.CustomCountdownPlugin
 {
@@ -108,12 +107,7 @@ namespace ClassIsland.CustomCountdownPlugin
             }
             catch (Exception ex)
             {
-                try {
-                    var logger = (IAppHost.Host?.Services as IServiceProvider)?.GetService(typeof(ILogger<Plugin>)) as ILogger<Plugin>;
-                    logger?.LogError(ex, "播放音频时出错");
-                } catch (Exception innerEx) {
-                    // 处理获取日志服务时可能出现的错误
-                }
+
                 MessageBox.Show("播放音频时出错: " + ex.Message);
             }
         }
