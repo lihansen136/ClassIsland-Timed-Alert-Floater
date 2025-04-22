@@ -21,7 +21,7 @@ body:
       label: 请确认以下事项
       description: 请在提交issue前仔细阅读并确认以下事项
       options:
-        - label: 我确认在[当前issues](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/issues?q=is%3Aissue%20label%3Abug)里没有重复的问题并且Also I'm updated to [the latest version](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/releases)
+        - label: 我确认在[当前issues](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/issues?q=is%3Aissue%20label%3Abug)里没有重复的问题并且我已经更新到[最新版本](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/releases)
           required: true        
         - label: 我已经仔细查看过内容，并知道这个选项不用勾选
           required: false
