@@ -28,7 +28,7 @@ body:
         - label: 我已将本应用更新到最新测试版，并已经在[最新issues](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/issues?q=is%3Aissue%20label%3A%E6%96%B0%E5%8A%9F%E8%83%BD)查看过，没有重复。
           required: true
         - label: 我已经仔细阅读过选项里的内容，并且知道这个选项不用勾选。
-          required: flase
+          required: false
         - label: 我已知晓由于开发者时间精力有限，我提交的功能请求可能需要比较久的时间才能实现。
           required: true
   - type: markdown
