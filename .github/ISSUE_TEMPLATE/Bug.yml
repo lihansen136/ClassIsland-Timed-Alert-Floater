@@ -3,7 +3,7 @@ description: 在使用插件时遇到了问题
 title: 你发现的问题
 labels: ["bug","待查看","优先级低"]
 body:
-  - type:markdown
+  - type: markdown
     attributes:
       value: |
         感谢您发现问题，请您起一个能清晰概括问题的标题。
@@ -15,35 +15,34 @@ body:
 
         >[TIP]
         如果您不知道如何有效、精准地表述，我们建议您先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
-  
   - type: checkboxes
     id: checkbox
     attributes:
-      lebel: 请确认以下事项
+      label: 请确认以下事项
       description: 请在提交issue前仔细阅读并确认以下事项
       options:
-        - lebel:我确认在[当前issues](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/issues?q=is%3Aissue%20label%3Abug)里没有重复的问题并且我也经更新到[最新的版本](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/releases)
+        - label: 我确认在[当前issues](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/issues?q=is%3Aissue%20label%3Abug)里没有重复的问题并且Also I'm updated to [the latest version](https://github.com/lihansen136/ClassIsland-Timed-Alert-Floater/releases)
           required: true        
-        - lebel:我已经仔细查看过内容，并知道这个选项不用勾选
+        - label: 我已经仔细查看过内容，并知道这个选项不用勾选
+          required: false
         - label: 我已知晓并同意，此处仅用于汇报程序中存在的问题（关于其他非程序本身的问题应当在 Discussion 板块提出）。
           required: true
-      
-    - type:markdown
-      id:exception
-      attributes:
-        value: |
-          ## Bug信息
+  - type: markdown
+    id: exception
+    attributes:
+      value: |
+        ## Bug信息
 
-           描述您遇到的 Bug。您可以附上截图、录屏、堆栈跟踪、日志等材料，便于开发者追踪问题。**您可以阅读[此处的文档](https://docs.classisland.tech/app/reporting-issue) 来了解如何收集跟踪错误需要的信息。**
+        描述您遇到的 Bug。您可以附上截图、录屏、堆栈跟踪、日志等材料，便于开发者追踪问题。**您可以阅读[此处的文档](https://docs.classisland.tech/app/reporting-issue) 来了解如何收集跟踪错误需要的信息。**
 
-          > [!note]
-          > 上传附件时**请优先使用 GitHub 的附件系统上传附件**，将需要上传的附件粘贴或拖动到撰写区域即可上传。多个文件可打包为 zip 格式后上传。**尽量避免使用需要登陆或安装客户端才能接收附件的网盘（如\*度网盘、\*克网盘、1\*3网盘等）上传附件**，以避免开发者因不具有对应网盘客户端或账户而延误问题诊断。
+        > [!note]
+        > 上传附件时**请优先使用 GitHub 的附件系统上传附件**，将需要上传的附件粘贴或拖动到撰写区域即可上传。多个文件可打包为 zip 格式后上传。**尽量避免使用需要登陆或安装客户端才能接收附件的网盘（如\*度网盘、\*克网盘、1\*3网盘等）上传附件**，以避免开发者因不具有对应网盘客户端或账户而延误问题诊断。
 
-          > [!warning]
-          > 请不要在issue里包含非法字符！
-          > 请不要在issue里包含任何的个人信息，包括但不限于：QQ号、手机号、邮箱地址、姓名、昵称、头像、头像链接、用户名、密码、身份证号、银行卡号、地址、个人信息等。
-
-           id: excepted
+        > [!warning]
+        > 请不要在issue里包含非法字符！
+        > 请不要在issue里包含任何的个人信息，包括但不限于：QQ号、手机号、邮箱地址、姓名、昵称、头像、头像链接、用户名、密码、身份证号、银行卡号、地址、个人信息等。
+  - type: input
+    id: excepted
     attributes:
       label: 期望的行为
       description: 详细的描述你期望发生的行为，突出与目前（可能不正确的）行为的不同。
@@ -98,7 +97,7 @@ body:
         您当前使用的 Windows 操作系统版本，可以运行 `winver.exe` 查看。
         如果您不能肯定此 Bug 与操作系统无关，请填写此项。
       placeholder: 如：10.0.22000.0
-    - type: input
+  - type: input
     id: hardware_version
     attributes:
       label: 硬件版本
