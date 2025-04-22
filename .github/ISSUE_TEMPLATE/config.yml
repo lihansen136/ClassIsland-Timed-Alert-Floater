@@ -1,5 +1,7 @@
 blank_issues_enabled: false
 contact_links:
+  1-Bug.yml
+  2-FeatureRequest.yml
   - name : 联系开发者
     url : https://qm.qq.com/q/cDJU8swoTe
     about : 加入QQ群（246319310）
