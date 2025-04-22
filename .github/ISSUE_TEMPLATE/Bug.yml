@@ -13,7 +13,7 @@ body:
         >请不要在issue里提出无关此issue的的问题
         >请不要在issue里包含非法字符！
 
-        >[TIP]
+        >[!TIP]
         如果您不知道如何有效、精准地表述，我们建议您先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
   - type: checkboxes
     id: checkbox
