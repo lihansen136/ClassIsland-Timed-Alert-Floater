@@ -1,7 +1,7 @@
 name : Bug报告
 description: 在使用插件时遇到了问题
 title: 你发现的问题
-labels: ["bug","待查看","优先级低"]
+labels: ["bug","待查看","优先级低","开启"]
 body:
   - type: markdown
     attributes:
